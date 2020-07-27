@@ -88,6 +88,7 @@ button:focus {
 }
 
 footer {
+  margin-top: 50px;
   padding-top: 5px;
   background-color: rgba(37, 37, 37, 0.178);
   height: 100px;
@@ -147,4 +148,13 @@ movie-searcher button:hover {
 #movie-rendering {
   height: 500px;
   width: 500px;
+}
+
+.movies {
+  height: 500px;
+}
+
+#skywalker {
+  margin-top: 5px;
+  box-shadow: 0 3px 8px rgb(0, 0, 0);
 }
