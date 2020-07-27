@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Searcher</title>
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <script src="https://api.dmcdn.net/all.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="src/app.js" defer type="module"></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        The portable video and movie database that the world sorely needs...
+      </h1>
+      <nav class="main-nav">
+        <button id="main-nav__search">Search for Movie/Show</button>
+        <button id="main-nav__movies">Your Movies</button>
+      </nav>
+    </header>
+    <section class="video-player">
+      <div id="player"></div>
+    </section>
+    <h2 id="movie-info-title">
+      Want to get information on a movie or show? Search for it...
+    </h2>
+    <form id="movie-searcher__form">
+      <input id="movie-searcher__title" type="text" required />
+      <button id="movie-searcher__button" type="submit">Search</button>
+    </form>
+    <section id="movie-rendering"></section>
+    <section class="movie-images">
+      <figure>
+        <img
+          src="assets/images/infinity.jpg"
+          id="movie-image__infinity"
+          width="500"
+          height="450"
+          alt="HD infinity war image"
+        />
+        <figcaption>Infinity War | 2019</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="assets/images/100.jpeg"
+          id="movie-image__hundred"
+          width="650"
+          height="450"
+          alt="HD the 100 image"
+        />
+        <figcaption>The 100 | 2014-2020</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="assets/images/dragon.jpg"
+          id="movie-image__dragon"
+          width="500"
+          height="450"
+          alt="HD game of thrones image"
+        />
+        <figcaption>Game Of Thrones | 2011-2019</figcaption>
+      </figure>
+    </section>
+    <footer>
+      <ul>
+        <li>
+          <a id="footer-item__name">Alex Khazzam</a>
+        </li>
+        <li>
+          <a id="footer-item__contact">Contact Me</a>
+        </li>
+        <li>
+          <a id="footer-item__year">2020</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

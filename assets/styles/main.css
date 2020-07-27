@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgba(0, 0, 0, 0.425);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  background-color: rgba(37, 37, 37, 0.178);
+  margin-bottom: 0px;
+  width: 100%;
+  top: 0px;
+}
+
+#main-nav__search {
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+.video-player {
+  margin-top: 0px;
+  margin-bottom: 90px;
+  height: 880px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+h1 {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  margin-left: 0px;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: left;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+nav {
+  display: inline-block;
+}
+
+button {
+  font-family: inherit;
+  text-decoration: underline;
+  background-color: inherit;
+  border: none;
+  color: black;
+  font-size: 23px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.527);
+}
+
+button:focus {
+  outline: none;
+}
+
+#movie-image__hundred {
+  box-shadow: 0 3px 8px rgb(0, 0, 0);
+  margin: 12px;
+}
+
+.movie-searcher h2 {
+  margin-top: 0px;
+  text-align: left;
+  margin-left: 75px;
+}
+
+.movie-images {
+  margin-bottom: 100px;
+}
+
+footer {
+  padding-top: 5px;
+  background-color: rgba(37, 37, 37, 0.178);
+  height: 100px;
+  width: 100%;
+}
+
+footer li {
+  display: inline-block;
+  margin: 20px;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+footer a:hover {
+  cursor: pointer;
+}
+
+#movie-searcher__button {
+  text-decoration: none;
+  background-color: rgba(54, 53, 53, 0.493);
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+}
+
+#movie-info-title {
+  display: inline-block;
+}
+
+#movie-searcher__form {
+  display: inline-block;
+  margin: 0px;
+  margin-left: 10px;
+}
+
+movie-searcher button:hover {
+  color: black;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
+#movie-searcher__title {
+  border: none;
+  font-size: 25px;
+  width: 450px;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+#movie-searcher__title:focus {
+  outline: none;
+}
+
+#movie-rendering {
+  height: 500px;
+  width: 500px;
+}
