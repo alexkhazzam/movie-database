@@ -158,3 +158,54 @@ movie-searcher button:hover {
   margin-top: 5px;
   box-shadow: 0 3px 8px rgb(0, 0, 0);
 }
+
+#movie-items {
+  width: 100%;
+}
+
+#list-of-movies li {
+  list-style: none;
+  margin: 0px;
+}
+
+#list-of-movies {
+  border: 1px solid black;
+  width: 26%;
+  margin-left: 53.2%;
+  margin-top: 0px;
+  height: fit-content;
+}
+
+#list-of-movies li {
+  width: 100%;
+  font-size: 15px;
+  margin: 5px;
+}
+
+#movie-content {
+  max-height: 650px;
+  max-width: 650px;
+  text-align: left;
+  display: inline-block;
+}
+
+#movie-content li {
+  padding: 0px;
+  margin: 0px;
+  padding-left: 0px;
+  list-style: none;
+  word-wrap: break-word;
+}
+
+#rendering-movie-info {
+  text-align: center;
+  width: 1700px;
+  margin: auto;
+  height: 830px;
+}
+
+#movie-searche-image {
+  display: none;
+  margin: 10px;
+  box-shadow: 0 3px 8px rgb(0, 0, 0);
+}

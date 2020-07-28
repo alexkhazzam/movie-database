@@ -1,3 +1,6 @@
+import { movieTitles } from "../util/states.js";
+import { OMDBData } from "../util/states.js";
+
 export class HTTPHandler {
   constructor() {
     this.title = document.querySelector("#movie-searcher__title");
@@ -32,11 +35,11 @@ export class HTTPHandler {
     return promise;
   }
 
-  async fetchData() {
+  async fetchData(boolean) {
     const responseData = await this.sendReq(
       "GET",
-      `https://api.themoviedb.org/avengers/movie/550?api_key=8bc412bd996ff6c638a4f22bd1490b02`
+      `https://www.omdbapi.com/?&t=${this.title.value.trim()}&apikey=78628677`
     );
-    console.log(responseData);
+    OMDBData.push(responseData);
   }
 }

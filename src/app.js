@@ -1,9 +1,12 @@
 import { HTTPHandler } from "./components/HTTPHandler.js";
+import { RenderMovieContent } from "./app/renderMovieContent.js";
 
 class App {
-  fetchMovie() {
+  fetchMovie(boolean) {
     const reqHandler = new HTTPHandler();
-    reqHandler.fetchData();
+    reqHandler.fetchData(boolean);
+    const renderMovieContent = new RenderMovieContent();
+    renderMovieContent.renderToDOM();
   }
 }
 
@@ -15,13 +18,6 @@ var player = DM.player(document.getElementById("player"), {
     autoplay: true,
     mute: true,
   },
-});
-
-const movieSearcherBtn = document.querySelector("#movie-searcher__button");
-movieSearcherBtn.addEventListener("click", (event) => {
-  event.preventDefault();
-  const app = new App();
-  app.fetchMovie();
 });
 
 const yourMoviesBtn = document.querySelector("#main-nav__movies");
@@ -39,4 +35,17 @@ navBtn.addEventListener("click", () => {
 const scrollUp = document.querySelector("#footer-item__scroll");
 scrollUp.addEventListener("click", () => {
   navBtn.scrollIntoView({ behavior: "smooth" });
+});
+
+const movieSearchInput = document.querySelector("#movie-searcher__title");
+movieSearchInput.addEventListener("keyup", () => {
+  const app = new App();
+  app.fetchMovie(false);
+});
+
+const movieSearchBtn = document.querySelector("#movie-searcher__button");
+movieSearchBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  const app = new App();
+  app.fetchMovie(true);
 });

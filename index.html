@@ -25,14 +25,20 @@
     <section class="video-player">
       <div id="player"></div>
     </section>
-    <h2 id="movie-info-title">
-      Want to get information on a movie or show? Search for it...
-    </h2>
-    <form id="movie-searcher__form">
-      <input id="movie-searcher__title" type="text" required />
-      <button id="movie-searcher__button" type="submit">Search</button>
-    </form>
-    <section id="movie-rendering"></section>
+    <section id="rendering-movie-info">
+      <h2 id="movie-info-title">
+        Want to get information on a movie or show? Search for it...
+      </h2>
+      <form id="movie-searcher__form">
+        <section id="movie-items">
+          <input id="movie-searcher__title" type="text" required />
+          <button id="movie-searcher__button" type="submit">Search</button>
+        </section>
+      </form>
+      <ul id="list-of-movies"></ul>
+      <ul id="movie-content"></ul>
+      <img id="movie-searched-image" />
+    </section>
     <section class="movie-images">
       <figure>
         <img
@@ -82,7 +88,6 @@
     </section>
     <section class="movies">
       <h2 id="movies__header">Your Movies</h2>
-      <ul></ul>
     </section>
     <figure>
       <img
