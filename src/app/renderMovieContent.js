@@ -58,7 +58,6 @@ export class RenderMovieContent {
           li17.innerHTML = `<p>iMDB Rating:</p> ${movie.imdbRating}`;
           const li18 = document.createElement("li");
           li18.innerHTML = `<p>iMDB Votes:</p> ${movie.imdbVotes}`;
-          const p = document.querySelectorAll("#movie-content p");
           this.movieContent.append(
             li0,
             li1,
@@ -86,6 +85,7 @@ export class RenderMovieContent {
           movieImg.style.display = "inline-block";
           movieImg.style.width = "350px";
           movieImg.style.height = "350px";
+          const p = document.querySelectorAll("#movie-content p");
           p.forEach((pTag) => {
             pTag.style.color = "red";
             pTag.style.display = "inline";
